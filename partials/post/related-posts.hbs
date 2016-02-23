@@ -1,0 +1,13 @@
+<section class="relatedPost main">
+  <div class="content content-lg clearfix">
+    <header class="relatedPost-header">
+      <h2>Artigos relacionados</h2>
+    </header>
+
+    <section class="relatedPost-content">
+      {{#get "posts" limit="4"}}
+        {{> "post/loop-called-post" }}
+      {{/get}}
+    </section>
+  </div>
+</section>

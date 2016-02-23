@@ -1,0 +1,33 @@
+<article class="calledPost clearfix {{ post_class }}">
+  <figure class="postFigure">
+    <a href="{{ url }}" title="{{ title }}">
+      <img src="{{ image }}" alt="{{ title }}">
+    </a>
+  </figure>
+
+  <section class="postText">
+    <div class="table">
+      <div class="table-cell table-cell--center">
+        <header class="postText-header">
+          <h2>
+            <a href="{{ url }}">
+              {{ title }}
+            </a>
+          </h2>
+        </header>
+
+        <a class="postText-time" href="{{ url }}" title="{{ title }}">
+          {{> "post/time-post" }}
+        </a>
+
+        <p class="postText-called">
+          <a href="{{ url }}" title="{{ title }}">
+            {{ excerpt words="20" }}
+          </a>
+        </p>
+
+        <a class="postText-readMore" href="{{ url }}" title="{{ title }}">Leia mais...</a>
+      </div>
+    </div>
+  </section>
+</article>
